@@ -5,6 +5,7 @@
 #include "WordSpin.h"
 #include "Timer.h"
 #include "MultiplesOfThreeOrFive.h"
+#include "SafeCalculator.h"
 
 int main()
 {
@@ -30,7 +31,16 @@ int main()
     timer.stop();
     std::cout << "Second version took: " << timer.getElapsed() << " seconds" << std::endl;
 
-    Multiples_Of_Three_Or_Five::solution(100000);
+    Multiples_Of_Three_Or_Five::solution(1000);
+
+    std::cout << "Max limit of short: " << getMaxLimit(short()) << std::endl;
+    std::cout << "Max limit of int: " << getMaxLimit(int()) << std::endl;
+    std::cout << "Max limit of long: " << getMaxLimit(long()) << std::endl;
+    std::cout << "Max limit of double: " << getMaxLimit(double()) << std::endl;
+
+    short value = getMaxLimit(short());
+    increment(value);
+    std::cout << value;
 
     return 0;
 }

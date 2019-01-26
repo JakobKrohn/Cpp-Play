@@ -10,6 +10,10 @@
 iostream
 -
 
+/home/jakob/CLionProjects/CppPlay/SafeCalculator.h
+limits
+-
+
 /home/jakob/CLionProjects/CppPlay/Timer.h
 chrono
 -
@@ -31,4 +35,6 @@ Timer.h
 /home/jakob/CLionProjects/CppPlay/Timer.h
 MultiplesOfThreeOrFive.h
 /home/jakob/CLionProjects/CppPlay/MultiplesOfThreeOrFive.h
+SafeCalculator.h
+/home/jakob/CLionProjects/CppPlay/SafeCalculator.h
 
