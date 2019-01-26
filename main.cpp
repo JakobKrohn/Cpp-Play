@@ -2,9 +2,12 @@
 #include <vector>
 #include <algorithm>
 #include "WordSpin.h"
+#include "Timer.h"
 
 int main()
 {
+
+    Timer timer;
 
     std::vector<int> v{1, 2, 3, 4, 5, 6,67, 7, 8, 8, 9, 6, 5, 34, 2, 4, 5,5, 150, -5 };
 
@@ -15,7 +18,16 @@ int main()
     std::cout << "Smallest element is: " << min << std::endl;
 
     WordSpin ws;
+
+    timer.start();
     std::cout << ws.spinWords("Hey my fellow warriors") << std::endl;
+    timer.stop();
+    std::cout << "First version took: " << timer.getElapsed() << " seconds" << std::endl;
+
+    timer.start();
+    std::cout << ws.spinWordsReverse("Hey my fellow warriors") << std::endl;
+    timer.stop();
+    std::cout << "Second version took: " << timer.getElapsed() << " seconds" << std::endl;
 
     return 0;
 }

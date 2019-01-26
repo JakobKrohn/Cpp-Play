@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/jakob/CLionProjects/CppPlay/Timer.cpp" "/home/jakob/CLionProjects/CppPlay/cmake-build-debug/CMakeFiles/CppPlay.dir/Timer.cpp.o"
   "/home/jakob/CLionProjects/CppPlay/WordSpin.cpp" "/home/jakob/CLionProjects/CppPlay/cmake-build-debug/CMakeFiles/CppPlay.dir/WordSpin.cpp.o"
   "/home/jakob/CLionProjects/CppPlay/main.cpp" "/home/jakob/CLionProjects/CppPlay/cmake-build-debug/CMakeFiles/CppPlay.dir/main.cpp.o"
   )

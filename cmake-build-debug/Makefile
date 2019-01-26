@@ -123,6 +123,33 @@ CppPlay/fast:
 	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/build
 .PHONY : CppPlay/fast
 
+Timer.o: Timer.cpp.o
+
+.PHONY : Timer.o
+
+# target to build an object file
+Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Timer.cpp.o
+.PHONY : Timer.cpp.o
+
+Timer.i: Timer.cpp.i
+
+.PHONY : Timer.i
+
+# target to preprocess a source file
+Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Timer.cpp.i
+.PHONY : Timer.cpp.i
+
+Timer.s: Timer.cpp.s
+
+.PHONY : Timer.s
+
+# target to generate assembly for a file
+Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Timer.cpp.s
+.PHONY : Timer.cpp.s
+
 WordSpin.o: WordSpin.cpp.o
 
 .PHONY : WordSpin.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CppPlay"
 	@echo "... edit_cache"
+	@echo "... Timer.o"
+	@echo "... Timer.i"
+	@echo "... Timer.s"
 	@echo "... WordSpin.o"
 	@echo "... WordSpin.i"
 	@echo "... WordSpin.s"

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CppPlay.dir/main.cpp.o"
   "CMakeFiles/CppPlay.dir/WordSpin.cpp.o"
+  "CMakeFiles/CppPlay.dir/Timer.cpp.o"
   "CppPlay.pdb"
   "CppPlay"
 )

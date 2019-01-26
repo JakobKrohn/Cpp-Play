@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/CppPlay.dir/main.cpp.o CMakeFiles/CppPlay.dir/WordSpin.cpp.o  -o CppPlay 
+/usr/bin/c++  -g   CMakeFiles/CppPlay.dir/main.cpp.o CMakeFiles/CppPlay.dir/WordSpin.cpp.o CMakeFiles/CppPlay.dir/Timer.cpp.o  -o CppPlay 
