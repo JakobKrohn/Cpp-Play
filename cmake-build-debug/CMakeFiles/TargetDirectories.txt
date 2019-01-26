@@ -1,0 +1,3 @@
+/home/jakob/CLionProjects/CppPlay/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jakob/CLionProjects/CppPlay/cmake-build-debug/CMakeFiles/CppPlay.dir
+/home/jakob/CLionProjects/CppPlay/cmake-build-debug/CMakeFiles/edit_cache.dir

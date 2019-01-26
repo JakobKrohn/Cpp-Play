@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jakob/CLionProjects/CppPlay/WordSpin.h
+string
+-
+
+/home/jakob/CLionProjects/CppPlay/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+WordSpin.h
+/home/jakob/CLionProjects/CppPlay/WordSpin.h
+
