@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/jakob/CLionProjects/CppPlay/MultiplesOfThreeOrFive.h
+iostream
+-
+
 /home/jakob/CLionProjects/CppPlay/Timer.h
 chrono
 -
@@ -25,4 +29,6 @@ WordSpin.h
 /home/jakob/CLionProjects/CppPlay/WordSpin.h
 Timer.h
 /home/jakob/CLionProjects/CppPlay/Timer.h
+MultiplesOfThreeOrFive.h
+/home/jakob/CLionProjects/CppPlay/MultiplesOfThreeOrFive.h
 

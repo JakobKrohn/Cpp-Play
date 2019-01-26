@@ -7,6 +7,8 @@
 #include <sstream>
 #include <algorithm>
 
+// -----------------------------------------------------------------------------------
+
 std::string WordSpin::spinWords(const std::string &str)
 {
     std::string ret = str;
@@ -38,6 +40,8 @@ std::string WordSpin::spinWords(const std::string &str)
     return ret;
 }
 
+// -----------------------------------------------------------------------------------
+
 std::string WordSpin::spinWordsReverse(const std::string &str)
 {
     std::stringstream ss(str);
@@ -51,5 +55,4 @@ std::string WordSpin::spinWordsReverse(const std::string &str)
     }
     result.pop_back();
     return result;
-    //return std::__cxx11::string();
 }

@@ -1,12 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 #include "WordSpin.h"
 #include "Timer.h"
+#include "MultiplesOfThreeOrFive.h"
 
 int main()
 {
-
     Timer timer;
 
     std::vector<int> v{1, 2, 3, 4, 5, 6,67, 7, 8, 8, 9, 6, 5, 34, 2, 4, 5,5, 150, -5 };
@@ -28,6 +29,8 @@ int main()
     std::cout << ws.spinWordsReverse("Hey my fellow warriors") << std::endl;
     timer.stop();
     std::cout << "Second version took: " << timer.getElapsed() << " seconds" << std::endl;
+
+    Multiples_Of_Three_Or_Five::solution(100000);
 
     return 0;
 }

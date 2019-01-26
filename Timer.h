@@ -24,7 +24,7 @@ private:
 
     std::chrono::time_point<std::chrono::system_clock> _start, _stop;
 
-    double _elapsed;
+    double _elapsed{};
 
 
 };
