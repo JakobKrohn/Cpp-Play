@@ -74,6 +74,20 @@ void sumOfDigits_digitalRoot()
 
 // --------------------------------------------------------------------------------------------------------------------
 
+void morseSignal()
+{
+    // .... . -.--   .--- ..- -.. .
+    // .... . -.--   .--- ..- -.. .
+    // "HEY JUDE"
+
+    Morse morse;
+
+    std::cout << morse.encode("hey jude");
+
+}
+
+// --------------------------------------------------------------------------------------------------------------------
+
 int main()
 {
     Timer timer;
@@ -88,8 +102,7 @@ int main()
 
     //sumOfDigits_digitalRoot();
 
-    Morse morse;
-    morse.format();
+    morseSignal();
 
     return 0;
 }

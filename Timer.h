@@ -13,6 +13,7 @@ class Timer
 public:
 
     Timer() = default;
+    ~Timer() = default;
 
     void start();
 

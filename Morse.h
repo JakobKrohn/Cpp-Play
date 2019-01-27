@@ -12,11 +12,18 @@ class Morse
 
 public:
 
-    void format();
+    Morse() = default;
+    ~Morse() = default;
+
+    std::string encode(std::string message);
+
+    std::string decode(std::string message);
 
 private:
 
     char getCharacter(std::string value);
+
+    std::string getMorse(char character);
 
 };
 

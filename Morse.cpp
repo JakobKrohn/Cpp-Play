@@ -8,6 +8,7 @@
 #include <algorithm>
 
 const std::map<char, std::string> morseMap = {
+        {' ', " "}, // todo shitty solution, fix
         {'a', ".-"},
         {'b', "-..."},
         {'c', "-.-."},
@@ -36,15 +37,31 @@ const std::map<char, std::string> morseMap = {
         {'z', "--.."}
 };
 
+// --------------------------------------------------------------------------------------------------------------------
 
-
-void Morse::format()
+std::string Morse::encode(std::string message)
 {
-   std::cout << "a -> " << morseMap.find('a')->second << std::endl;
-   std::cout << ".- -> " << getCharacter(".-") << std::endl;
-   std::cout << "--.. -> " << getCharacter("--..") << std::endl;
+    std::string encoded;
 
+    std::for_each(message.begin(), message.end(), [&](auto&& s)
+    {
+        encoded += getMorse(s);
+
+        // Add a space between each character
+        encoded += ' '; // todo shitty solution, fix
+    });
+
+    return encoded;
 }
+
+// --------------------------------------------------------------------------------------------------------------------
+
+std::string Morse::decode(std::string message)
+{
+    return std::__cxx11::string();
+}
+
+// --------------------------------------------------------------------------------------------------------------------
 
 char Morse::getCharacter(std::string value)
 {
@@ -62,3 +79,16 @@ char Morse::getCharacter(std::string value)
     return -1;
 }
 
+// --------------------------------------------------------------------------------------------------------------------
+
+std::string Morse::getMorse(char character)
+{
+    auto iterator = morseMap.find(character);
+
+    if (iterator != morseMap.end())
+    {
+        return iterator->second;
+    }
+
+    return "[?]";
+}
