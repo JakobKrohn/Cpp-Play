@@ -7,6 +7,7 @@
 #include "MultiplesOfThreeOrFive.h"
 #include "SafeCalculator.h"
 #include "DigitalRoot.h"
+#include "Morse.h"
 
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -64,8 +65,6 @@ void safeCalculator()
 
 void sumOfDigits_digitalRoot()
 {
-    //digitalRoot(123);
-
     std::cout << "Digital root of 16: " << digitalRoot(16) << std::endl;
     std::cout << "Digital root of 195: " << digitalRoot(195) << std::endl;
     std::cout << "Digital root of 0: " << digitalRoot(0) << std::endl;
@@ -87,7 +86,10 @@ int main()
 
     // safeCalculator();
 
-    sumOfDigits_digitalRoot();
+    //sumOfDigits_digitalRoot();
+
+    Morse morse;
+    morse.format();
 
     return 0;
 }

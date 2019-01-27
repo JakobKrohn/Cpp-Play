@@ -123,6 +123,33 @@ CppPlay/fast:
 	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/build
 .PHONY : CppPlay/fast
 
+Morse.o: Morse.cpp.o
+
+.PHONY : Morse.o
+
+# target to build an object file
+Morse.cpp.o:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Morse.cpp.o
+.PHONY : Morse.cpp.o
+
+Morse.i: Morse.cpp.i
+
+.PHONY : Morse.i
+
+# target to preprocess a source file
+Morse.cpp.i:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Morse.cpp.i
+.PHONY : Morse.cpp.i
+
+Morse.s: Morse.cpp.s
+
+.PHONY : Morse.s
+
+# target to generate assembly for a file
+Morse.cpp.s:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Morse.cpp.s
+.PHONY : Morse.cpp.s
+
 Timer.o: Timer.cpp.o
 
 .PHONY : Timer.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CppPlay"
 	@echo "... edit_cache"
+	@echo "... Morse.o"
+	@echo "... Morse.i"
+	@echo "... Morse.s"
 	@echo "... Timer.o"
 	@echo "... Timer.i"
 	@echo "... Timer.s"

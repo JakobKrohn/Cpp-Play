@@ -87,6 +87,15 @@
 		<Unit filename="/home/jakob/CLionProjects/CppPlay/DigitalRoot.h">
 			<Option target="CppPlay"/>
 		</Unit>
+		<Unit filename="/home/jakob/CLionProjects/CppPlay/Formatter.h">
+			<Option target="CppPlay"/>
+		</Unit>
+		<Unit filename="/home/jakob/CLionProjects/CppPlay/Morse.cpp">
+			<Option target="CppPlay"/>
+		</Unit>
+		<Unit filename="/home/jakob/CLionProjects/CppPlay/Morse.h">
+			<Option target="CppPlay"/>
+		</Unit>
 		<Unit filename="/home/jakob/CLionProjects/CppPlay/MultiplesOfThreeOrFive.h">
 			<Option target="CppPlay"/>
 		</Unit>

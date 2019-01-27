@@ -5,6 +5,15 @@
 #ifndef CPPPLAY_DIGITALROOT_H
 #define CPPPLAY_DIGITALROOT_H
 
+/*
+ * For loops and vector: https://www.quora.com/How-do-I-iterate-through-a-vector-using-for-loop-in-C++
+ *
+ * Recursive lambdas: https://riptutorial.com/cplusplus/example/8508/recursive-lambdas
+ *
+ * lambda: https://www.geeksforgeeks.org/lambda-expression-in-c/
+ *
+ * */
+
 #include <functional>
 
 template <class T>
@@ -29,11 +38,11 @@ T digitalRoot(T number)
 
     std::for_each(numbers.begin(), numbers.end(), [&](auto&& x)
     {
-        std::cout << "[" << x << "]";
+        //std::cout << "[" << x << "]";
         dr += x;
     });
 
-    std::cout << "\t";
+    //std::cout << "\t";
 
     if (dr >= 10) {
         return digitalRoot(dr);
