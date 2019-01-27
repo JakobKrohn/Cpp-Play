@@ -3,4 +3,4 @@ project(CppPlay)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CppPlay main.cpp WordSpin.cpp WordSpin.h Timer.cpp Timer.h MultiplesOfThreeOrFive.h SafeCalculator.h)
+add_executable(CppPlay main.cpp WordSpin.cpp WordSpin.h Timer.cpp Timer.h MultiplesOfThreeOrFive.h SafeCalculator.h DigitalRoot.h)

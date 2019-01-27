@@ -6,6 +6,7 @@
 #include "Timer.h"
 #include "MultiplesOfThreeOrFive.h"
 #include "SafeCalculator.h"
+#include "DigitalRoot.h"
 
 int main()
 {
@@ -40,7 +41,17 @@ int main()
 
     short value = getMaxLimit(short());
     increment(value);
-    std::cout << value;
+    std::cout << value << std::endl;
+
+    std::cout << "5%10=" << (5%10) << std::endl;
+
+    //digitalRoot(123);
+
+    std::cout << "Digital root of 16: " << digitalRoot(16) << std::endl;
+    std::cout << "Digital root of 942: " << digitalRoot(942) << std::endl;
+    std::cout << "Digital root of 132189: " << digitalRoot(132189) << std::endl;
+    //std::cout << "Digital root of 132189132189: " << digitalRoot(132189132189) << std::endl;
+
 
     return 0;
 }

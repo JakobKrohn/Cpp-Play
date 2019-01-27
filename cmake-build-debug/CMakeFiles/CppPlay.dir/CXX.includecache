@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/jakob/CLionProjects/CppPlay/DigitalRoot.h
+functional
+-
+
 /home/jakob/CLionProjects/CppPlay/MultiplesOfThreeOrFive.h
 iostream
 -
@@ -37,4 +41,6 @@ MultiplesOfThreeOrFive.h
 /home/jakob/CLionProjects/CppPlay/MultiplesOfThreeOrFive.h
 SafeCalculator.h
 /home/jakob/CLionProjects/CppPlay/SafeCalculator.h
+DigitalRoot.h
+/home/jakob/CLionProjects/CppPlay/DigitalRoot.h
 
