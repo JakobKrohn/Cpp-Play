@@ -8,10 +8,10 @@
 #include "SafeCalculator.h"
 #include "DigitalRoot.h"
 
-int main()
-{
-    Timer timer;
+// --------------------------------------------------------------------------------------------------------------------
 
+void minMaxLambda()
+{
     std::vector<int> v{1, 2, 3, 4, 5, 6,67, 7, 8, 8, 9, 6, 5, 34, 2, 4, 5,5, 150, -5 };
 
     auto max = v.at(static_cast<unsigned long>(std::distance(v.begin(), std::max_element(v.begin(), v.end()))));
@@ -19,7 +19,13 @@ int main()
 
     std::cout << "Largest element is: " << max << std::endl;
     std::cout << "Smallest element is: " << min << std::endl;
+}
 
+// --------------------------------------------------------------------------------------------------------------------
+
+void wordSpin()
+{
+    Timer timer;
     WordSpin ws;
 
     timer.start();
@@ -31,9 +37,19 @@ int main()
     std::cout << ws.spinWordsReverse("Hey my fellow warriors") << std::endl;
     timer.stop();
     std::cout << "Second version took: " << timer.getElapsed() << " microseconds" << std::endl;
+}
 
-    //Multiples_Of_Three_Or_Five::solution(1000);
+// --------------------------------------------------------------------------------------------------------------------
 
+void multiples_of_three_or_five()
+{
+    Multiples_Of_Three_Or_Five::solution(10);
+}
+
+// --------------------------------------------------------------------------------------------------------------------
+
+void safeCalculator()
+{
     std::cout << "Max limit of short: " << getMaxLimit(short()) << std::endl;
     std::cout << "Max limit of int: " << getMaxLimit(int()) << std::endl;
     std::cout << "Max limit of long: " << getMaxLimit(long()) << std::endl;
@@ -42,16 +58,35 @@ int main()
     short value = getMaxLimit(short());
     increment(value);
     std::cout << value << std::endl;
+}
 
-    std::cout << "5%10=" << (5%10) << std::endl;
+// --------------------------------------------------------------------------------------------------------------------
 
+void sumOfDigits_digitalRoot()
+{
     //digitalRoot(123);
 
     std::cout << "Digital root of 16: " << digitalRoot(16) << std::endl;
     std::cout << "Digital root of 942: " << digitalRoot(942) << std::endl;
     std::cout << "Digital root of 132189: " << digitalRoot(132189) << std::endl;
     //std::cout << "Digital root of 132189132189: " << digitalRoot(132189132189) << std::endl;
+}
 
+// --------------------------------------------------------------------------------------------------------------------
+
+int main()
+{
+    Timer timer;
+
+    // minMaxLambda();
+
+    // wordSpin();
+
+    // multiples_of_three_or_five();
+
+    // safeCalculator();
+
+    sumOfDigits_digitalRoot();
 
     return 0;
 }
