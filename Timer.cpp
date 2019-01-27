@@ -9,16 +9,17 @@
 
 void Timer::start()
 {
-    _start = std::chrono::system_clock::now();
+    _start = std::chrono::high_resolution_clock::now();
 }
 
 // -----------------------------------------------------------------------------------
 
 double Timer::stop()
 {
-    _stop = std::chrono::system_clock::now();
+    _stop = std::chrono::high_resolution_clock::now();
 
-    std::chrono::duration<double> elapsed = _stop - _start;
+    //std::chrono::duration<double> elapsed = _stop - _start;
+    auto elapsed = std::chrono::duration_cast<std::chrono::microseconds>(_stop - _start);
     _elapsed = elapsed.count();
 
     return getElapsed();

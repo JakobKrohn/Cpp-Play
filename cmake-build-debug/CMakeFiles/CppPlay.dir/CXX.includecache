@@ -18,6 +18,12 @@ iostream
 limits
 -
 
+/home/jakob/CLionProjects/CppPlay/Timer.cpp
+Timer.h
+/home/jakob/CLionProjects/CppPlay/Timer.h
+iostream
+-
+
 /home/jakob/CLionProjects/CppPlay/Timer.h
 chrono
 -

@@ -25,14 +25,14 @@ int main()
     timer.start();
     std::cout << ws.spinWords("Hey my fellow warriors") << std::endl;
     timer.stop();
-    std::cout << "First version took: " << timer.getElapsed() << " seconds" << std::endl;
+    std::cout << "First version took: " << timer.getElapsed() << " microseconds" << std::endl;
 
     timer.start();
     std::cout << ws.spinWordsReverse("Hey my fellow warriors") << std::endl;
     timer.stop();
-    std::cout << "Second version took: " << timer.getElapsed() << " seconds" << std::endl;
+    std::cout << "Second version took: " << timer.getElapsed() << " microseconds" << std::endl;
 
-    Multiples_Of_Three_Or_Five::solution(1000);
+    //Multiples_Of_Three_Or_Five::solution(1000);
 
     std::cout << "Max limit of short: " << getMaxLimit(short()) << std::endl;
     std::cout << "Max limit of int: " << getMaxLimit(int()) << std::endl;
