@@ -67,9 +67,10 @@ void sumOfDigits_digitalRoot()
     //digitalRoot(123);
 
     std::cout << "Digital root of 16: " << digitalRoot(16) << std::endl;
-    std::cout << "Digital root of 942: " << digitalRoot(942) << std::endl;
-    std::cout << "Digital root of 132189: " << digitalRoot(132189) << std::endl;
-    //std::cout << "Digital root of 132189132189: " << digitalRoot(132189132189) << std::endl;
+    std::cout << "Digital root of 195: " << digitalRoot(195) << std::endl;
+    std::cout << "Digital root of 0: " << digitalRoot(0) << std::endl;
+    std::cout << "Digital root of 132189132189: " << digitalRoot(132189132189) << std::endl;
+    std::cout << "(solution)Digital root of 16: " << solutionDigitalRoot(16) << std::endl;
 }
 
 // --------------------------------------------------------------------------------------------------------------------

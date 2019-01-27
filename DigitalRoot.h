@@ -7,17 +7,16 @@
 
 #include <functional>
 
-//template <class T>
-//T digitalRoot(T number)
-int digitalRoot(int number)
+template <class T>
+T digitalRoot(T number)
 {
-    std::vector<int> numbers{};
+    std::vector<T> numbers{};
 
-    std::function<int(int)> getDigits = [&](int x)
+    std::function<T(T)> getDigits = [&](T x)
     {
         if (x >= 10) { getDigits(x / 10); }
 
-        int digit = x % 10;
+        short digit = x % 10;
 
         numbers.push_back(digit);
 
@@ -26,7 +25,7 @@ int digitalRoot(int number)
 
     getDigits(number);
 
-    int dr = 0;
+    T dr = 0;
 
     std::for_each(numbers.begin(), numbers.end(), [&](auto&& x)
     {
@@ -34,17 +33,25 @@ int digitalRoot(int number)
         dr += x;
     });
 
-    std::cout << " ";
+    std::cout << "\t";
 
-    /*auto snumber = std::to_string(number);
-
-    for (auto s : snumber)
-    {
-        dr += (int(s) - 48);
-    }*/
+    if (dr >= 10) {
+        return digitalRoot(dr);
+    }
 
     return dr;
 }
+
+int solutionDigitalRoot(int Z) {
+    return --Z % 9 + 1;
+}
+
+/*auto snumber = std::to_string(number);
+
+for (auto s : snumber)
+{
+    dr += (int(s) - 48);
+}*/
 
 
 
