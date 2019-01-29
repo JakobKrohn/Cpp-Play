@@ -123,6 +123,33 @@ CppPlay/fast:
 	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/build
 .PHONY : CppPlay/fast
 
+Format/Formatter.o: Format/Formatter.cpp.o
+
+.PHONY : Format/Formatter.o
+
+# target to build an object file
+Format/Formatter.cpp.o:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Format/Formatter.cpp.o
+.PHONY : Format/Formatter.cpp.o
+
+Format/Formatter.i: Format/Formatter.cpp.i
+
+.PHONY : Format/Formatter.i
+
+# target to preprocess a source file
+Format/Formatter.cpp.i:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Format/Formatter.cpp.i
+.PHONY : Format/Formatter.cpp.i
+
+Format/Formatter.s: Format/Formatter.cpp.s
+
+.PHONY : Format/Formatter.s
+
+# target to generate assembly for a file
+Format/Formatter.cpp.s:
+	$(MAKE) -f CMakeFiles/CppPlay.dir/build.make CMakeFiles/CppPlay.dir/Format/Formatter.cpp.s
+.PHONY : Format/Formatter.cpp.s
+
 Morse.o: Morse.cpp.o
 
 .PHONY : Morse.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CppPlay"
 	@echo "... edit_cache"
+	@echo "... Format/Formatter.o"
+	@echo "... Format/Formatter.i"
+	@echo "... Format/Formatter.s"
 	@echo "... Morse.o"
 	@echo "... Morse.i"
 	@echo "... Morse.s"

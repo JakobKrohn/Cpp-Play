@@ -87,6 +87,12 @@
 		<Unit filename="/home/jakob/CLionProjects/CppPlay/DigitalRoot.h">
 			<Option target="CppPlay"/>
 		</Unit>
+		<Unit filename="/home/jakob/CLionProjects/CppPlay/Format/Formatter.cpp">
+			<Option target="CppPlay"/>
+		</Unit>
+		<Unit filename="/home/jakob/CLionProjects/CppPlay/Format/Formatter.h">
+			<Option target="CppPlay"/>
+		</Unit>
 		<Unit filename="/home/jakob/CLionProjects/CppPlay/Formatter.h">
 			<Option target="CppPlay"/>
 		</Unit>

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CppPlay.dir/WordSpin.cpp.o"
   "CMakeFiles/CppPlay.dir/Timer.cpp.o"
   "CMakeFiles/CppPlay.dir/Morse.cpp.o"
+  "CMakeFiles/CppPlay.dir/Format/Formatter.cpp.o"
   "CppPlay.pdb"
   "CppPlay"
 )

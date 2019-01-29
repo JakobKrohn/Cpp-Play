@@ -9,6 +9,7 @@
 #include "SafeCalculator.h"
 #include "DigitalRoot.h"
 #include "Morse.h"
+#include "Format/Formatter.h"
 
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -101,6 +102,13 @@ void morseSignal()
 
 // --------------------------------------------------------------------------------------------------------------------
 
+void formatTest()
+{
+    ns_format::Formatter fm;
+}
+
+// --------------------------------------------------------------------------------------------------------------------
+
 int main()
 {
     Timer timer;
@@ -115,7 +123,11 @@ int main()
 
     //sumOfDigits_digitalRoot();
 
-    morseSignal();
+    //morseSignal();
+
+    //std::cout << char(0) << std::endl;
+
+    formatTest();
 
     return 0;
 }
