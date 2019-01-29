@@ -82,8 +82,9 @@ void morseSignal()
 
     Morse morse;
 
-    std::cout << morse.encode("hey jude");
+    auto encoded = morse.encode("hey jude");
 
+    auto decoded = morse.decode(encoded);
 }
 
 // --------------------------------------------------------------------------------------------------------------------

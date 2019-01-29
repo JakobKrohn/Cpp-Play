@@ -8,7 +8,7 @@
 #include <algorithm>
 
 const std::map<char, std::string> morseMap = {
-        {' ', " "}, // todo shitty solution, fix
+        {' ', " "},
         {'a', ".-"},
         {'b', "-..."},
         {'c', "-.-."},
@@ -41,15 +41,17 @@ const std::map<char, std::string> morseMap = {
 
 std::string Morse::encode(std::string message)
 {
-    std::string encoded;
+    std::cout << "Encode message: [" << message << "] -> [";
 
-    std::for_each(message.begin(), message.end(), [&](auto&& s)
-    {
+    std::string encoded;
+    std::for_each(message.begin(), message.end(), [&](auto&& s){
         encoded += getMorse(s);
 
         // Add a space between each character
-        encoded += ' '; // todo shitty solution, fix
+        encoded += ' ';
     });
+
+    std::cout << encoded << "]" << std::endl;
 
     return encoded;
 }
@@ -58,7 +60,30 @@ std::string Morse::encode(std::string message)
 
 std::string Morse::decode(std::string message)
 {
-    return std::__cxx11::string();
+    std::cout << "Decode message: [" << message << "] -> \n";
+
+    std::string decoded;
+    unsigned long temp = 0;
+    auto index = message.find_first_of(' ');
+    while (index != std::string::npos)
+    {
+        if (index > temp)
+        {
+            std::cout << getCharacter(message.substr(temp, (index - temp)));
+            decoded += getCharacter(message.substr(temp, (index - temp)));
+        } else { index++; decoded += ' '; }
+        std::cout << "[" << message.substr(temp, (index - temp)) << "](temp/index): " << temp << "/" << index << std::endl;
+
+        //temp = index;
+        temp = ++index;
+
+
+
+        index = message.find_first_of(' ', index);
+    }
+
+    std::cout << decoded;
+    return decoded;
 }
 
 // --------------------------------------------------------------------------------------------------------------------
