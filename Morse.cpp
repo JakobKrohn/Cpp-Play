@@ -7,6 +7,7 @@
 #include <iostream>
 #include <algorithm>
 
+
 const std::map<char, std::string> morseMap = {
         {' ', " "},
         {'a', ".-"},
@@ -43,6 +44,8 @@ std::string Morse::encode(std::string message)
 {
     std::cout << "Encode message: [" << message << "] -> [";
 
+    std::transform(message.begin(), message.end(), message.begin(), ::tolower);
+
     std::string encoded;
     std::for_each(message.begin(), message.end(), [&](auto&& s){
         encoded += getMorse(s);
@@ -60,7 +63,7 @@ std::string Morse::encode(std::string message)
 
 std::string Morse::decode(std::string message)
 {
-    std::cout << "Decode message: [" << message << "] -> \n";
+    std::cout << "Decode message: [" << message << "] -> [";
 
     std::string decoded;
     unsigned long temp = 0;
@@ -69,20 +72,21 @@ std::string Morse::decode(std::string message)
     {
         if (index > temp)
         {
-            std::cout << getCharacter(message.substr(temp, (index - temp)));
+            //std::cout << getCharacter(message.substr(temp, (index - temp)));
             decoded += getCharacter(message.substr(temp, (index - temp)));
+
         } else { index++; decoded += ' '; }
-        std::cout << "[" << message.substr(temp, (index - temp)) << "](temp/index): " << temp << "/" << index << std::endl;
+
+        //std::cout << "[" << message.substr(temp, (index - temp)) << "](temp/index): " << temp << "/" << index << std::endl;
 
         //temp = index;
         temp = ++index;
 
-
-
         index = message.find_first_of(' ', index);
     }
 
-    std::cout << decoded;
+    std::cout << decoded << "]" << std::endl;
+
     return decoded;
 }
 
@@ -101,7 +105,7 @@ char Morse::getCharacter(std::string value)
         iterator++;
     }
 
-    return -1;
+    return '?';
 }
 
 // --------------------------------------------------------------------------------------------------------------------

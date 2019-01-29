@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cassert>
 
 #include "WordSpin.h"
 #include "Timer.h"
@@ -76,15 +77,26 @@ void sumOfDigits_digitalRoot()
 
 void morseSignal()
 {
-    // .... . -.--   .--- ..- -.. .
-    // .... . -.--   .--- ..- -.. .
-    // "HEY JUDE"
+    const std::string tiny = "A tiny string";
+    const std::string medium("This is a medium long message");
+    const std::string large("Real recognize that stainless silverspoon what my aim is");
+    const std::string wrong("Denne stringen inneholder æ ø å");
 
     Morse morse;
 
-    auto encoded = morse.encode("hey jude");
-
+    auto encoded = morse.encode(tiny);
     auto decoded = morse.decode(encoded);
+
+    //assert(tiny == decoded);
+
+    encoded = morse.encode(medium);
+    decoded = morse.decode(encoded);
+
+    encoded = morse.encode(large);
+    decoded = morse.decode(encoded);
+
+    encoded = morse.encode(wrong);
+    decoded = morse.decode(encoded);
 }
 
 // --------------------------------------------------------------------------------------------------------------------
