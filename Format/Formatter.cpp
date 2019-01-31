@@ -26,3 +26,4 @@ void ns_format::Formatter::listFiles()
      //   std::cout << entry.path() << std::endl;
     }
 }
+
