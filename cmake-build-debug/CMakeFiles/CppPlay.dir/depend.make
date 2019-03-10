@@ -17,7 +17,10 @@ CMakeFiles/CppPlay.dir/main.cpp.o: ../DigitalRoot.h
 CMakeFiles/CppPlay.dir/main.cpp.o: ../Format/Formatter.h
 CMakeFiles/CppPlay.dir/main.cpp.o: ../Morse.h
 CMakeFiles/CppPlay.dir/main.cpp.o: ../MultiplesOfThreeOrFive.h
+CMakeFiles/CppPlay.dir/main.cpp.o: ../NumberContainer/NumberContainer.h
+CMakeFiles/CppPlay.dir/main.cpp.o: ../PrimeNumbers.h
 CMakeFiles/CppPlay.dir/main.cpp.o: ../SafeCalculator.h
+CMakeFiles/CppPlay.dir/main.cpp.o: ../SafeVector.h
 CMakeFiles/CppPlay.dir/main.cpp.o: ../Timer.h
 CMakeFiles/CppPlay.dir/main.cpp.o: ../WordSpin.h
 CMakeFiles/CppPlay.dir/main.cpp.o: ../main.cpp

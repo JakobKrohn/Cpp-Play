@@ -18,7 +18,10 @@ CMakeFiles/CppPlay.dir/main.cpp.o
  /home/jakob/CLionProjects/CppPlay/Format/Formatter.h
  /home/jakob/CLionProjects/CppPlay/Morse.h
  /home/jakob/CLionProjects/CppPlay/MultiplesOfThreeOrFive.h
+ /home/jakob/CLionProjects/CppPlay/NumberContainer/NumberContainer.h
+ /home/jakob/CLionProjects/CppPlay/PrimeNumbers.h
  /home/jakob/CLionProjects/CppPlay/SafeCalculator.h
+ /home/jakob/CLionProjects/CppPlay/SafeVector.h
  /home/jakob/CLionProjects/CppPlay/Timer.h
  /home/jakob/CLionProjects/CppPlay/WordSpin.h
  /home/jakob/CLionProjects/CppPlay/main.cpp

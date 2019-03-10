@@ -105,7 +105,16 @@
 		<Unit filename="/home/jakob/CLionProjects/CppPlay/MultiplesOfThreeOrFive.h">
 			<Option target="CppPlay"/>
 		</Unit>
+		<Unit filename="/home/jakob/CLionProjects/CppPlay/NumberContainer/NumberContainer.h">
+			<Option target="CppPlay"/>
+		</Unit>
+		<Unit filename="/home/jakob/CLionProjects/CppPlay/PrimeNumbers.h">
+			<Option target="CppPlay"/>
+		</Unit>
 		<Unit filename="/home/jakob/CLionProjects/CppPlay/SafeCalculator.h">
+			<Option target="CppPlay"/>
+		</Unit>
+		<Unit filename="/home/jakob/CLionProjects/CppPlay/SafeVector.h">
 			<Option target="CppPlay"/>
 		</Unit>
 		<Unit filename="/home/jakob/CLionProjects/CppPlay/Timer.cpp">

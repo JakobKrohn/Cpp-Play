@@ -5,6 +5,7 @@
 #ifndef CPPPLAY_FORMATTER_H
 #define CPPPLAY_FORMATTER_H
 
+#include <string>
 
 namespace ns_format
 {
@@ -17,9 +18,15 @@ namespace ns_format
         Formatter();
         ~Formatter() = default;
 
+        std::string stringToHex(std::string str);
+
+        template <class T>
+        std::string myToString(const T& n);
+
     private:
 
         void listFiles();
+
 
     };
 
